@@ -156,9 +156,38 @@ body {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding:1rem;
+  padding: 1rem;
   border-right: 1px solid var(--grey-15, #262626);
   border-bottom: 1px solid var(--grey-15, #262626);
   border-left: 1px solid var(--grey-15, #262626);
   background: rgba(36, 36, 36, 0.2);
+}
+
+.our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(172, 255, 36, 0.2) 0%,
+      rgba(172, 255, 36, 0.2) 100%
+    ),
+    url(<path-to-image>), lightgray 0% 0% / 100px 100px repeat,
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+  background-blend-mode: color, normal, overlay;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.services-text {
+  color: var(--grey-90, #e6e6e6);
+  font-size: 1.125rem;
+  font-weight: 400;
 }
